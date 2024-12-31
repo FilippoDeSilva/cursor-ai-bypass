@@ -64,44 +64,6 @@ This tool is intended for educational and ethical purposes only. Use it only on 
 
 By using this tool, you agree to use it responsibly and at your own risk.
 
-License
-This project is licensed under the MIT License. See below for the license text.
-
-MIT License:
-
-plaintext
-Always show details
-
-Copy code
-MIT License
-
-Copyright (c) 2024 [Your Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-Contributing
-Contributions are welcome! If you'd like to enhance this project, feel free to fork the repository and submit a pull request with your improvements.
-
-Acknowledgments
-pyfiglet for enabling ASCII art generation.
-All contributors and users who provided feedback to improve this tool.
-Note: Always act responsibly when using this tool. Unauthorized access or modification of systems without permission is illegal and unethical.# Cursor AI Telemetry Modifier
-
 ### Disclaimer:
 
 This tool is intended strictly for educational purposes or for modifying telemetry data in environments you have the right to access and modify. Misuse of this tool on unauthorized systems is illegal and unethical. **The author is not responsible for the misuse of this tool. Use it at your own discretion and responsibility.**
