@@ -1,19 +1,18 @@
 # Cursor AI Telemetry Modifier
 
 ## Description
-A Python script to anonymize telemetry data in the `storage.json` file for Cursor AI by replacing identifiers with random UUIDs. It also features an ASCII art display of "CURSOR AI" for an engaging user experience.
+A Python script to anonymize telemetry data in the `storage.json` file for Cursor AI by replacing identifiers with random UUIDs.
 
 ## Features
 - Replace telemetry-related identifiers with random UUIDs.
 - Read, modify, and save JSON files securely.
-- Displays ASCII art for "CURSOR AI".
 
 ## Prerequisites
 - Python 3.x installed.
 - Install `pyfiglet` via pip:
   ```bash
   pip install pyfiglet
-Usage
+## Usage
 Update json_file_path in the script with the path to your storage.json file.
 Run the script:
 bash
