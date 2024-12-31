@@ -13,12 +13,9 @@ A Python script to anonymize telemetry data in the `storage.json` file for Curso
   ```bash
   pip install pyfiglet
 ## Usage
-Run the script: bash```python cursor.py```
-bash
-Always show details
+Run the script: ```bash 
+python cursor.py
 
-Copy code
-python cursor_ai_telemetry_modifier.py
 License
 This project is licensed under the MIT License.
 
