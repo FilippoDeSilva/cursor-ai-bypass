@@ -13,8 +13,7 @@ A Python script to anonymize telemetry data in the `storage.json` file for Curso
   ```bash
   pip install pyfiglet
 ## Usage
-Update json_file_path in the script with the path to your storage.json file.
-Run the script:
+Run the script: bash```python cursor.py```
 bash
 Always show details
 
