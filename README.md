@@ -18,7 +18,7 @@ This Python script is a utility for modifying telemetry-related JSON values in t
 
 - Python 3.6 or higher
 - `pyfiglet` library (install with `pip install pyfiglet`)
-
+- `colorama` library (install with `pip install colorama`)
 ---
 
 ## Usage
@@ -70,6 +70,7 @@ If you'd like to contribute to this project, please fork the repository and subm
 ## Acknowledgments
 
 - [pyfiglet](https://github.com/pwaller/pyfiglet) for the ASCII art library.
+- [colorama](https://github.com/tartley/colorama) for the terminal coloring library.
 - Special thanks to anyone who contributed ideas or feedback to make this tool better.
 
 ---
