@@ -25,7 +25,7 @@ This Python script is a utility for modifying telemetry-related JSON values in t
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/FilippoDeSilva/cursor-ai-bypass.git
+   git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
 2. Update the `json_file_path` variable in the script to point to your `storage.json` file. (Only if you aren't using Windows OS otherwise don't touch anything)
 3. Run the script:
    ```bash
