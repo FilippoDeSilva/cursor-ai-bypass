@@ -75,4 +75,4 @@ If you'd like to contribute to this project, please fork the repository and subm
 
 ---
 
-**Remember**: Always act responsibly when using this tool. Test only on networks you own or have explicit permission to test. Unauthorized access to networks is illegal.
+**Remember**: Always act responsibly when using this tool.
