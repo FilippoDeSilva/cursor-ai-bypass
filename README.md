@@ -1,7 +1,3 @@
-# CURSOR and Windsurf AI Telemetry Bypass Script
-### Disclaimer
-This script is provided for educational and experimental purposes only. Use it responsibly and ensure compliance with any relevant terms of service or policies. The author is not liable for any misuse or damages arising from the use of this script.
-
 # CURSOR and Windsurf AI Telemetry Bypass & Automation Toolkit
 
 ## Disclaimer
