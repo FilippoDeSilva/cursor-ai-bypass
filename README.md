@@ -42,9 +42,10 @@ This Python toolkit automates several tasks for Cursor and Windsurf AI, includin
 - `colorama`
 
 Install all dependencies with:
+
 ```bash
 pip install -r requirements.txt
-pip install pyfiglet colorama```
+pip install pyfiglet colorama ```
 ---
 
 ## Usage
