@@ -44,12 +44,13 @@ This Python toolkit automates several tasks for Cursor and Windsurf AI, includin
 Install all dependencies with:
 ```bash
 pip install -r requirements.txt
-pip install pyfiglet colorama
+pip install pyfiglet colorama```
 ---
 
 ## Usage
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
 2. Update the `json_file_path` variable in the script to point to your `storage.json` file. (Only if you aren't using Windows OS otherwise don't touch anything)
