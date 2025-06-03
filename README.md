@@ -71,7 +71,8 @@ To install all required dependencies, run the following:
     ```
 
 ## License
-```markdown
+
+```bash
 ### MIT License
 
 Copyright (c) [2024] [Filippo De Silva]
