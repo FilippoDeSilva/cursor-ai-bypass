@@ -60,7 +60,8 @@ To install all required dependencies, run the following:
 
    ```bash 
     git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
-    cd cursor-windsurf-ai-bypass```
+    cd cursor-windsurf-ai-bypass
+```
 
 2. Edit the configuration file:  
    Open `config.yaml` or `config.json` and set the variables based on your pc setup for more read `config.yaml`
