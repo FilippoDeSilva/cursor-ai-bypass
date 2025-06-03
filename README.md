@@ -86,7 +86,7 @@ pip install -r requirements.txt
 ## Known Issues:
 
 - **Automated registration is not working:** but to be fixed on the next release I'd be glad on collaboration. 
-- **Version bypass isn't working:** it's a failsafe method I could come up with it's not that important unless the user doesn't want cursor to auto update the IDE. 
+- **Version bypass isn't working:** it's a failsafe method I could come up with it's not that important unless the user doesn't want cursor to auto update the IDE. So for now I'll give it a low priority. 
 
 ## License
 
