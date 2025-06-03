@@ -43,9 +43,7 @@ This toolkit automates multiple tasks, including:
 
 - `selenium`  
 - `pyyaml`  
-- `requests`  
-- `pyfiglet`  
-- `colorama`  
+- `requests`   
 
 📌 Install all dependencies with:
 ## 📦 Installation
@@ -73,7 +71,7 @@ To install all required dependencies, run the following:
     ```
 
 ## License
-
+```markdown
 ### MIT License
 
 Copyright (c) [2024] [Filippo De Silva]
