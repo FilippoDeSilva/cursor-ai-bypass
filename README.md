@@ -1,4 +1,4 @@
-# CURSOR and Windsurf AI Telemetry Bypass & Automation Toolkit
+# Cursor AI Telemetry Bypass Automation
 
 ## 🚀 Introduction
 
