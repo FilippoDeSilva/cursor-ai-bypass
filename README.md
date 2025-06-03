@@ -52,11 +52,9 @@ This toolkit automates multiple tasks, including:
 
 To install all required dependencies, run the following:
 
-```bash
+```python
 pip install -r requirements.txt
 pip install pyfiglet colorama
-
----
 
 ## Usage
 
