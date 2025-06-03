@@ -105,12 +105,12 @@ If you'd like to contribute to this project, please fork the repository and subm
 
 ## Acknowledgments
 
-Developing this tool wouldn’t have been possible without the incredible contributions of open-source projects and supportive individuals. I sincerely appreciate:
+Developing this tool wouldn’t have been possible without the incredible contributions of open-source projects and supportive individuals and services. I sincerely appreciate:
 
 - `selenium` – Web automation framework  
 - `pyyaml` – YAML parsing and processing library  
 - `requests` – HTTP requests handling library  
-- **Temp Mail** – Temporary email service
+- `Temp Mail` – Temporary email service
 
 ---
 
