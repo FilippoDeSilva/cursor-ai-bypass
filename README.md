@@ -70,7 +70,7 @@ pip install -r requirements.txt
 2. Edit the configuration file:  
    Open `config.yaml` or `config.json` and set the variables based on your pc setup for more read `config.yaml`
 
-3. Log out of your Cursor AI IDE
+3. Log out of your current Cursor account and close it. 
 
 4. Go to your favorite temp mail provider (temp-mail.com) 
 
