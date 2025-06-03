@@ -48,6 +48,9 @@ This toolkit automates multiple tasks, including:
 - `colorama`  
 
 📌 Install all dependencies with:
+## 📦 Installation
+
+To install all required dependencies, run the following:
 
 ```bash
 pip install -r requirements.txt
