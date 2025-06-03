@@ -59,7 +59,7 @@ pip install -r requirements.txt```
 
 1. Clone the repository:
 
-```bash 
+```python
   git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
     cd cursor-windsurf-ai-bypass```
 
