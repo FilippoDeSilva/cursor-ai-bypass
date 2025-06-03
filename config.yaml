@@ -2,7 +2,7 @@
 
 # ──── 1) BROWSER / WEBDRIVER SETUP ─────────────────────────────────────────────
 browser: chrome              # "chrome" or "firefox"
-driver_path: "C:/Users/Filip/OneDrive/Desktop/cursor-pro/chromedriver.exe" 
+driver_path: "chromedriver.exe" 
 # Path to chromedriver/geckodriver binary, or omitted if on PATH
 headless: false              # true => run browser in headless mode, false => show UI for debugging
 
@@ -21,7 +21,7 @@ static_email: ~           # e.g. "youown@mail.com"
 # ──── 3) CURSOR APP INSTALLATION PATH ──────────────────────────────────────────
 # In many cases, the script can auto‐detect "Cursor" install path (see code below).
 # But if you installed Cursor somewhere custom, set it here:
-cursor_path: "D:/Program Files/cursor/Cursor.exe"
+cursor_path: "your-cursor-path"
 # Examples you might fill in:
 # Windows:   "C:\\Program Files\\Cursor"
 # macOS:     "/Applications/Cursor.app/Contents/Resources/app"
