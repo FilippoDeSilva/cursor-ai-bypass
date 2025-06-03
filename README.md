@@ -51,7 +51,8 @@ This toolkit automates multiple tasks, including:
 To install all required dependencies, run the following:
 
 ```bash 
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
 ---
 
