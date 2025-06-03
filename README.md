@@ -17,7 +17,7 @@ This project is intended **for educational and research purposes only**. Users m
 This toolkit automates multiple tasks, including:
 
 ✅ **Bypassing telemetry & version checks** by manipulating key files (`storage.json`, product version, machine ID, etc.).  
-✅ **Automated account registration** using temporary email services  (**Temp-Mail-Plus**).  (**Coming on the next release). 
+✅ **Automated account registration** using temporary email services  (**Temp-Mail-Plus**). 
 ✅ **Resetting machine identifiers** and clearing telemetry data.  
 ✅ **Cross-platform support** for **Windows**, **macOS**, and **Linux**.  
 
@@ -26,8 +26,8 @@ This toolkit automates multiple tasks, including:
 ## ✨ Features
 
 - **📡 Telemetry Bypass** – Randomizes telemetry IDs in `storage.json` for Cursor and Windsurf AI.  
-- **🔄 Version Bypass** – Modifies version details to bypass compatibility checks.  
-- **🤖 Automated Account Registration** – Registers new Cursor accounts using headless browser automation.  
+- **🔄 Version Bypass** – Modifies version details to bypass compatibility checks.  (**Coming on the next release**) 
+- **🤖 Automated Account Registration** – Registers new Cursor accounts using headless browser automation. (**Coming on the next release**) 
 - **🖥️ Cross-Platform Compatibility detects OS and adjusts file paths.  
 - **📁 Safe Backups** – Ensures backups of key files before modification.  
 - **⚙️ Configurable Settings** – Uses YAML/JSON configuration for paths, credentials, and options.  
