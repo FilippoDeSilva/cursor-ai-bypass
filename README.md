@@ -50,22 +50,27 @@ pip install pyfiglet colorama ```
 
 ## Usage
 
-1. Clone this repository:
+1. Clone the repository:
 
-git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
+    ```bash
+    git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
+    cd cursor-windsurf-ai-bypass
+    ```
 
+2. Edit the configuration (only if you're **not using Windows**):  
+   Open `config.yaml` or `config.json` and set the `json_file_path` variable to point to your `storage.json` file.
 
-2. Update the config file:
+3. Run the script:
 
-Edit the json_file_path variable in config.yaml or config.json to point to your storage.json file.
+    ```bash
+    python main.py
+    ```
+
+---
 
 ## License
 
-This project is licensed under the **MIT License**.
-```
-**MIT License**:
-
-MIT License
+### MIT License
 
 Copyright (c) [2024] [Filippo De Silva]
 
