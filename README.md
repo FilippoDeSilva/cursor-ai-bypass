@@ -59,9 +59,9 @@ pip install -r requirements.txt```
 
 1. Clone the repository:
 
-```python
+`
   git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
-    cd cursor-windsurf-ai-bypass```
+    cd cursor-windsurf-ai-bypass`
 
 2. Edit the configuration file:  
    Open `config.yaml` or `config.json` and set the variables based on your pc setup for more read `config.yaml`
