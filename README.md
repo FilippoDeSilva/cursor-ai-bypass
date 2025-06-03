@@ -70,12 +70,18 @@ pip install -r requirements.txt
 2. Edit the configuration file:  
    Open `config.yaml` or `config.json` and set the variables based on your pc setup for more read `config.yaml`
 
-3. Run the script:
+3. Log out of your Cursor AI IDE
+
+4. Go to your favorite temp mail provider (temp-mail.com) 
+
+5. Run the script:
 
     ```bash
     python main.py
     ```
+6. Login to cursor with the temp mail 
 
+7. All done!
 ## License
 
 ### MIT License
