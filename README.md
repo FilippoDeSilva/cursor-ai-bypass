@@ -1,4 +1,4 @@
-3# Cursor AI Telemetry Bypass Automation Toolkit
+# Cursor AI Telemetry Bypass Automation Toolkit
 
 ## 🚀 Introduction
 
