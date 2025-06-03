@@ -31,7 +31,7 @@ This toolkit automates multiple tasks, including:
 - **🖥️ Cross-Platform Compatibility detects OS and adjusts file paths.  
 - **📁 Safe Backups** – Ensures backups of key files before modification.  
 - **⚙️ Configurable Settings** – Uses YAML/JSON configuration for paths, credentials, and options.  
-- **🎨 Colorful CLI Output** – Enhances terminal experience with ASCII art (`pyfiglet`) and colored text (`colorama`).  
+  
 
 ---
 
@@ -58,11 +58,12 @@ To install all required dependencies, run the following:
 
 1. Clone the repository:
 
-   `git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git`
-    `cd cursor-windsurf-ai-bypass`
+   ```bash 
+    git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
+    cd cursor-windsurf-ai-bypass```
 
-2. Edit the configuration (only if you're **not using Windows**):  
-   Open `config.yaml` or `config.json` and set the `json_file_path` variable to point to your `storage.json` file.
+2. Edit the configuration file:  
+   Open `config.yaml` or `config.json` and set the variables based on your pc setup for more read `config.yaml`
 
 3. Run the script:
 
