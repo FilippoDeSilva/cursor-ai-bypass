@@ -32,10 +32,19 @@ This Python toolkit automates several tasks for Cursor and Windsurf AI, includin
 ## Requirements
 
 - Python 3.6 or higher
-- Install dependencies:
-  ```bash
-  pip install -r requirements.txt
-  pip install pyfiglet colorama 
+
+### Main dependencies
+
+- `selenium`
+- `pyyaml`
+- `requests`
+- `pyfiglet`
+- `colorama`
+
+Install all dependencies with:
+```bash
+pip install -r requirements.txt
+pip install pyfiglet colorama
 ---
 
 ## Usage
