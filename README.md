@@ -65,7 +65,6 @@ pip install pyfiglet colorama
     ```bash
     git clone https://github.com/FilippoDeSilva/cursor-windsurf-ai-bypass.git
     cd cursor-windsurf-ai-bypass
-    ```
 
 2. Edit the configuration (only if you're **not using Windows**):  
    Open `config.yaml` or `config.json` and set the `json_file_path` variable to point to your `storage.json` file.
