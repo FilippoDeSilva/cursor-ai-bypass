@@ -1,8 +1,8 @@
-# Cursor AI Telemetry Bypass Automation Toolkit
+# Cursor AI Telemetry Bypass Script 
 
 ## 🚀 Introduction
 
-Welcome to the **Cursor AI Telemetry Bypass Automation Toolkit**—a powerful Python toolkit designed to bypass cursor AI usage limits.
+Welcome to the **Cursor AI Telemetry Bypass Script**—a powerful Python toolkit designed to bypass cursor AI usage limits.
 
 ---
 
