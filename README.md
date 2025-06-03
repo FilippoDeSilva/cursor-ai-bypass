@@ -1,52 +1,57 @@
 # CURSOR and Windsurf AI Telemetry Bypass & Automation Toolkit
 
-## Disclaimer
+## 🚀 Introduction
 
-This project is provided for educational and research purposes only. You are responsible for compliance with all applicable terms of service and laws. The author is not liable for misuse or damages.
-
----
-
-## Overview
-
-This Python toolkit automates several tasks for Cursor and Windsurf AI, including:
-
-- Bypassing telemetry and version checks by manipulating key files (`storage.json`, product version, machine ID, etc.).
-- Registering new Cursor accounts using temporary/disposable email services (Temp-Mail-Plus).
-- Resetting machine identifiers and cleaning up telemetry data.
-- Supports Windows, macOS, and Linux.
+Welcome to the **Cursor & Windsurf AI Telemetry Bypass & Automation Toolkit**—a powerful Python toolkit designed to streamline automation tasks for Cursor and Windsurf AI.
 
 ---
 
-## Features
+## ⚠️ Disclaimer
 
-- **Telemetry Bypass**: Randomizes telemetry IDs in `storage.json` for Cursor and Windsurf AI.
-- **Version Bypass**: Modifies version information to bypass version checks.
-- **Automated Registration**: Registers new Cursor accounts using headless browser automation and disposable email.
-- **Cross-Platform**: Detects OS and adapts file paths as needed.
-- **Safe Backups**: Backs up key files before modification.
-- **Configurable**: Uses a YAML/JSON config file for paths, credentials, and options.
-- **Colorful CLI**: Uses `pyfiglet` for ASCII art and `colorama` for colored output.
+This project is intended **for educational and research purposes only**. Users must comply with all applicable **terms of service** and **laws**. The author holds **no liability** for misuse or damages resulting from this tool.
 
 ---
 
-## Requirements
+## 🔍 Overview
 
-- Python 3.6 or higher
+This toolkit automates multiple tasks, including:
 
-### Main dependencies
+✅ **Bypassing telemetry & version checks** by manipulating key files (`storage.json`, product version, machine ID, etc.).  
+✅ **Automated account registration** using temporary email services (**Temp-Mail-Plus**).  
+✅ **Resetting machine identifiers** and clearing telemetry data.  
+✅ **Cross-platform support** for **Windows**, **macOS**, and **Linux**.  
 
-- `selenium`
-- `pyyaml`
-- `requests`
-- `pyfiglet`
-- `colorama`
+---
 
-Install all dependencies with:
+## ✨ Features
+
+- **📡 Telemetry Bypass** – Randomizes telemetry IDs in `storage.json` for Cursor and Windsurf AI.  
+- **🔄 Version Bypass** – Modifies version details to bypass compatibility checks.  
+- **🤖 Automated Account Registration** – Registers new Cursor accounts using headless browser automation.  
+- **🖥️ Cross-Platform Compatibility detects OS and adjusts file paths.  
+- **📁 Safe Backups** – Ensures backups of key files before modification.  
+- **⚙️ Configurable Settings** – Uses YAML/JSON configuration for paths, credentials, and options.  
+- **🎨 Colorful CLI Output** – Enhances terminal experience with ASCII art (`pyfiglet`) and colored text (`colorama`).  
+
+---
+
+## 📦 Requirements
+
+✅ Python **3.6** or higher  
+
+### 🔗 Main Dependencies  
+
+- `selenium`  
+- `pyyaml`  
+- `requests`  
+- `pyfiglet`  
+- `colorama`  
+
+📌 Install all dependencies with:
 
 ```bash
 pip install -r requirements.txt
-pip install pyfiglet colorama ```
----
+pip install pyfiglet colorama
 
 ## Usage
 
