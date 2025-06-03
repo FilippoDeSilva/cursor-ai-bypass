@@ -1,8 +1,8 @@
-# Cursor AI Telemetry Bypass Automation
+# Cursor AI Telemetry Bypass Automation Toolkit
 
 ## 🚀 Introduction
 
-Welcome to the **Cursor & Windsurf AI Telemetry Bypass & Automation Toolkit**—a powerful Python toolkit designed to streamline automation tasks for Cursor and Windsurf AI.
+Welcome to the **Cursor AI Telemetry Bypass Automation Toolkit**—a powerful Python toolkit designed to bypass cursor AI usage limits.
 
 ---
 
@@ -18,6 +18,7 @@ This toolkit automates multiple tasks, including:
 
 ✅ **Bypassing telemetry & version checks** by manipulating key files (`storage.json`, product version, machine ID, etc.).  
 ✅ **Automated account registration** using temporary email services  (**Temp-Mail-Plus**). 
+
 ✅ **Resetting machine identifiers** and clearing telemetry data.  
 ✅ **Cross-platform support** for **Windows**, **macOS**, and **Linux**.  
 
