@@ -105,9 +105,12 @@ If you'd like to contribute to this project, please fork the repository and subm
 
 ## Acknowledgments
 
-- [pyfiglet](https://github.com/pwaller/pyfiglet) for the ASCII art library.
-- [colorama](https://github.com/tartley/colorama) for the terminal coloring library.
-- Special thanks to anyone who contributed ideas or feedback to make this tool better.
+Developing this tool wouldn’t have been possible without the incredible contributions of open-source projects and supportive individuals. I sincerely appreciate:
+
+- `selenium` – Web automation framework  
+- `pyyaml` – YAML parsing and processing library  
+- `requests` – HTTP requests handling library  
+- **Temp Mail** – Temporary email service
 
 ---
 
