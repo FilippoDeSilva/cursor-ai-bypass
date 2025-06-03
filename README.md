@@ -2,23 +2,44 @@
 ### Disclaimer
 This script is provided for educational and experimental purposes only. Use it responsibly and ensure compliance with any relevant terms of service or policies. The author is not liable for any misuse or damages arising from the use of this script.
 
-### Description
+# CURSOR and Windsurf AI Telemetry Bypass & Automation Toolkit
 
-This Python script is a utility for modifying telemetry-related JSON values in the `storage.json` file associated with Cursor and Windsurf AI. It generates random UUID-like strings for telemetry keys and saves the updated data back to the file.
+## Disclaimer
+
+This project is provided for educational and research purposes only. You are responsible for compliance with all applicable terms of service and laws. The author is not liable for misuse or damages.
+
+---
+
+## Overview
+
+This Python toolkit automates several tasks for Cursor and Windsurf AI, including:
+
+- Bypassing telemetry and version checks by manipulating key files (`storage.json`, product version, machine ID, etc.).
+- Registering new Cursor accounts using temporary/disposable email services (Temp-Mail-Plus).
+- Resetting machine identifiers and cleaning up telemetry data.
+- Supports Windows, macOS, and Linux.
 
 ---
 
 ## Features
 
-- **Generates Random UUIDs**: Uses Python's `uuid` library to create random identifiers.
-- **JSON Data Manipulation**: Reads, modifies, and writes JSON data.
+- **Telemetry Bypass**: Randomizes telemetry IDs in `storage.json` for Cursor and Windsurf AI.
+- **Version Bypass**: Modifies version information to bypass version checks.
+- **Automated Registration**: Registers new Cursor accounts using headless browser automation and disposable email.
+- **Cross-Platform**: Detects OS and adapts file paths as needed.
+- **Safe Backups**: Backs up key files before modification.
+- **Configurable**: Uses a YAML/JSON config file for paths, credentials, and options.
+- **Colorful CLI**: Uses `pyfiglet` for ASCII art and `colorama` for colored output.
+
 ---
 
 ## Requirements
 
 - Python 3.6 or higher
-- `pyfiglet` library (install with `pip install pyfiglet`)
-- `colorama` library (install with `pip install colorama`)
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  pip install pyfiglet colorama 
 ---
 
 ## Usage
