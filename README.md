@@ -66,8 +66,6 @@ pip install pyfiglet colorama ```
     python main.py
     ```
 
----
-
 ## License
 
 ### MIT License
