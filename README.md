@@ -16,10 +16,12 @@ This project is intended **for educational and research purposes only**. Users m
 
 This toolkit automates multiple tasks, including:
 
-✅ **Bypassing telemetry & version checks** by manipulating key files (`storage.json`, product version, machine ID, etc.).  
+✅ **Bypassing telemetry & version checks** by manipulating key files (`storage.json`, product version, machine ID, etc.). 
+ 
 ✅ **Automated account registration** using temporary email services  (**Temp-Mail-Plus**). 
 
-✅ **Resetting machine identifiers** and clearing telemetry data.  
+✅ **Resetting machine identifiers** and clearing telemetry data.
+  
 ✅ **Cross-platform support** for **Windows**, **macOS**, and **Linux**.  
 
 ---
