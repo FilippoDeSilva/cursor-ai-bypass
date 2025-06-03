@@ -45,7 +45,6 @@ This toolkit automates multiple tasks, including:
 - `pyyaml`  
 - `requests`   
 
-📌 Install all dependencies with:
 ## 📦 Installation
 
 To install all required dependencies, run the following:
