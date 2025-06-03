@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ### MIT License
 ```bash
-Copyright (c) [2024] [Filippo De Silva]
+Copyright (c) [2025] [Filippo De Silva]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
