@@ -1,0 +1,17 @@
+{
+  "browser": "chrome",
+  "driver_path": "C:\Users\Filip\OneDrive\Desktop\cursor-pro\chromedriver.exe",
+  "headless": true,
+  "first_name": "Peter",
+  "last_name": "Segth",
+  "password": "YourSecurePass123!",
+  "static_email": null,
+  "cursor_path": "D:\Program Files\cursor\Cursor.exe",
+  "target_version": "0.48.7",
+  "storage_json_path": null,
+  "sqlite_db_path": null,
+  "machine_id_path": null,
+  "email_poll_timeout": 180,
+  "email_poll_interval": 5,
+  "skip_registration": false
+}

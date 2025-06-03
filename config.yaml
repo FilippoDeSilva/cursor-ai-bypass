@@ -1,0 +1,47 @@
+# config.yaml
+
+# ──── 1) BROWSER / WEBDRIVER SETUP ─────────────────────────────────────────────
+browser: chrome              # "chrome" or "firefox"
+driver_path: "C:/Users/Filip/OneDrive/Desktop/cursor-pro/chromedriver.exe" 
+# Path to chromedriver/geckodriver binary, or omitted if on PATH
+headless: false              # true => run browser in headless mode, false => show UI for debugging
+
+# ──── 2) SIGNUP / EMAIL SETTINGS ─────────────────────────────────────────────
+# You can skip this if you only want to reset machine ID & version;
+# but if you want to auto-register/confirm with temp‐mail, fill these:
+first_name: "Peter"
+last_name: "Segth"
+password: "YourSecurePass123!"   # Password to use for the new Cursor account
+                        # (will use a generated temp mail + this password)
+# If you want to use a static email rather than temp‐mail, put it here; else leave null:
+static_email: ~           # e.g. "youown@mail.com"
+# If you already have an email you want to use and do not want to auto‐register with temp‐mail,
+# then leave static_email set and comment out auto-temp-mail logic in main.py.
+
+# ──── 3) CURSOR APP INSTALLATION PATH ──────────────────────────────────────────
+# In many cases, the script can auto‐detect "Cursor" install path (see code below).
+# But if you installed Cursor somewhere custom, set it here:
+cursor_path: "D:/Program Files/cursor/Cursor.exe"
+# Examples you might fill in:
+# Windows:   "C:\\Program Files\\Cursor"
+# macOS:     "/Applications/Cursor.app/Contents/Resources/app"
+# Linux:     "/opt/Cursor/squashfs-root/usr/share/cursor/resources/app"
+
+# ──── 4) VERSION BYPASS SETTINGS ──────────────────────────────────────────────
+# If you want to force‐bypass a version check, set your target version here:
+target_version: "0.48.7"      # The version to write into product.json if current < 0.46.0
+
+# ──── 5) MACHINE ID RESET CONFIG ─────────────────────────────────────────────
+# These are default file‐locations under each OS; you rarely need to change these,
+# since the code will auto‐locate them based on OS. If you want to override:
+storage_json_path: ~       # e.g. on Linux: "/home/user/.config/Cursor/User/globalStorage/storage.json"
+sqlite_db_path: ~          # e.g. on Linux: "~/.config/Cursor/User/globalStorage/state.vscdb"
+machine_id_path: ~         # e.g. on Linux: "~/.config/Cursor/machineId"
+
+# ──── 6) TIMEOUT / RETRY SETTINGS ─────────────────────────────────────────────
+email_poll_timeout: 180       # in seconds: how long to wait for confirmation email
+email_poll_interval: 5        # in seconds: how often to refresh temp‐mail inbox
+
+# ──── 7) EXTRAS / FLAGS ───────────────────────────────────────────────────────
+# If you only want to reset machine ID + version, skip signup logic by setting:
+skip_registration: false
