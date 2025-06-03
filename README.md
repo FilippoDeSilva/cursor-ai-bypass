@@ -50,7 +50,8 @@ This toolkit automates multiple tasks, including:
 
 To install all required dependencies, run the following:
 
-`pip install -r requirements.txt`
+```bash 
+pip install -r requirements.txt```
 
 ---
 
