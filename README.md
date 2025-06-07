@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 ```bash
   git clone https://github.com/FilippoDeSilva/cursor-ai-bypass.git
-    cd cursor-ai-bypass
+  cd cursor-ai-bypass
 ```
 
 2. Edit the configuration file:  
