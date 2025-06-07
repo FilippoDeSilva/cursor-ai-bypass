@@ -77,10 +77,10 @@ pip install -r requirements.txt
 5. Run the script:
 
     ```bash
-#To run all the scripts 
-    python main.py --all
+    python main.py --all #To run all the scripts
+    python main.py --help 
 #To see available flags
-    python main.py --help
+ 
     ```
 6. Login to cursor with the temp mail 
 
