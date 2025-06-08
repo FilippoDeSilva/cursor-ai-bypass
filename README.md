@@ -77,7 +77,7 @@ pip install -r requirements.txt
 5. Run the script:
 
     ```bash
-    python main.py --all #To run every script
+    python main.py --all --config config.yaml #To run every script
     python main.py --help #To see all the available flags
  
     ```
