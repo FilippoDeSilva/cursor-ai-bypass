@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import json
 import uuid
 import pyfiglet
@@ -349,4 +348,4 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> cursor-ai-pro
+
