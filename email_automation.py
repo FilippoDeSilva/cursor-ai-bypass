@@ -19,17 +19,169 @@ def solve_recaptcha(driver):
     try:
         WebDriverWait(driver, 5).until(
             EC.frame_to_be_available_and_switch_to_it(
-                (By.XPATH, "//iframe[contains(@src, 'recaptcha')]")
+                (By.XPATH, "//iframe[contains(@src, 'recaptcha') or contains(@src, 'google.com/recaptcha')]")
             )
         )
         WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, "div.recaptcha-checkbox-border"))
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "div.recaptcha-checkbox-border, div.recaptcha-checkbox-checkmark"))
         ).click()
         logging.info("  ‣ Clicked reCAPTCHA checkbox on Temp-Mail-Plus.")
-    except Exception:
-        pass
+    except Exception as e:
+        logging.error(f"  ‣ Error clicking reCAPTCHA checkbox: {e}")
     finally:
         driver.switch_to.default_content()
+<<<<<<< SEARCH
+def get_temp_email(driver, timeout=30):
+    """
+    Navigate to Temp-Mail-Plus (https://tempmail.plus), solve reCAPTCHA if present,
+    wait for the generated address, then return it.
+    """
+    TEMP_MAIL_URL = "https://tempmail.plus"
+    logging.info("  ↪ Opening Temp-Mail-Plus for a disposable inbox…")
+    driver.get(TEMP_MAIL_URL)
+
+    # Solve any reCAPTCHA that pops up
+    solve_recaptcha(driver)
+
+    try:
+        email_elem = WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located((By.ID, "email"))
+        )
+        temp_email = email_elem.get_attribute("value")
+        logging.info(f"  ‣ Temp-Mail-Plus acquired: {temp_email}")
+        return temp_email
+    except Exception as e:
+        logging.error(f"  ‣ Failed to get temp email from Temp-Mail-Plus: {e}")
+        return None
+=======
+def get_temp_email(driver, timeout=30):
+    """
+    Navigate to Temp-Mail-Plus (https://tempmail.plus), solve reCAPTCHA if present,
+    wait for the generated address, then return it.
+    """
+    TEMP_MAIL_URL = "https://tempmail.plus"
+    logging.info("  ↪ Opening Temp-Mail-Plus for a disposable inbox…")
+    driver.get(TEMP_MAIL_URL)
+
+    # Solve any reCAPTCHA that pops up
+    solve_recaptcha(driver)
+
+    try:
+        email_elem = WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located((By.CSS_SELECTOR, "input#email, input#mail"))
+        )
+        temp_email = email_elem.get_attribute("value")
+        logging.info(f"  ‣ Temp-Mail-Plus acquired: {temp_email}")
+        return temp_email
+    except Exception as e:
+        logging.error(f"  ‣ Failed to get temp email from Temp-Mail-Plus: {e}")
+        return None
+<<<<<<< SEARCH
+def wait_for_confirmation_email(driver, timeout=180, poll_interval=5):
+    """
+    Poll the Temp-Mail-Plus inbox for a message with “cursor” or “confirm” in the subject.
+    Once found, click it, switch into the email iframe, extract a “confirm” link, and return it.
+    """
+    logging.info("  ↪ Waiting for confirmation email via Temp-Mail-Plus…")
+    deadline = time.time() + timeout
+
+    while time.time() < deadline:
+        # Solve reCAPTCHA again if it re-appears during polling
+        solve_recaptcha(driver)
+
+        # Look for list items in the inbox
+        try:
+            items = driver.find_elements(By.CSS_SELECTOR, "ul.message-list li")
+        except Exception:
+            items = []
+
+        for itm in items:
+            try:
+                subj = itm.find_element(By.CSS_SELECTOR, ".subject").text.lower()
+            except Exception:
+                subj = ""
+            if "cursor" in subj or "confirm" in subj:
+                logging.info(f"  ‣ Found Temp-Mail-Plus email: {subj}")
+                itm.click()
+                # Wait for the email iframe to load
+                WebDriverWait(driver, 15).until(
+                    EC.frame_to_be_available_and_switch_to_it((By.CSS_SELECTOR, "iframe#iframeMail"))
+                )
+                body_html = driver.find_element(By.TAG_NAME, "body").get_attribute("innerHTML")
+                driver.switch_to.default_content()
+                m = re.search(r'href="([^"]*confirm[^"]*)"', body_html, re.IGNORECASE)
+                if m:
+                    confirm_url = m.group(1)
+                    logging.info(f"  ‣ Extracted confirmation link: {confirm_url}")
+                    return confirm_url
+                else:
+                    logging.warning("  ‣ No 'confirm' link found in email body.")
+        time.sleep(poll_interval)
+
+        # Click the refresh button if present
+        try:
+            driver.find_element(By.CSS_SELECTOR, ".refresh-btn").click()
+        except Exception:
+            pass
+
+    logging.error("  ‣ Timed out waiting for confirmation email (Temp-Mail-Plus).")
+    return None
+=======
+def wait_for_confirmation_email(driver, timeout=180, poll_interval=5):
+    """
+    Poll the Temp-Mail-Plus inbox for a message with “cursor” or “confirm” in the subject.
+    Once found, click it, switch into the email iframe, extract a “confirm” link, and return it.
+    """
+    logging.info("  ↪ Waiting for confirmation email via Temp-Mail-Plus…")
+    deadline = time.time() + timeout
+
+    while time.time() < deadline:
+        # Solve reCAPTCHA again if it re-appears during polling
+        solve_recaptcha(driver)
+
+        # Look for list items in the inbox
+        try:
+            items = driver.find_elements(By.CSS_SELECTOR, "ul.message-list li, div.mail-list div.mail-item")
+        except Exception as e:
+            logging.error(f"  ‣ Error finding message list items: {e}")
+            items = []
+
+        for itm in items:
+            try:
+                subj = itm.find_element(By.CSS_SELECTOR, ".subject, .mail-subject").text.lower()
+            except Exception:
+                subj = ""
+            if "cursor" in subj or "confirm" in subj:
+                logging.info(f"  ‣ Found Temp-Mail-Plus email: {subj}")
+                itm.click()
+                # Wait for the email iframe to load
+                try:
+                    WebDriverWait(driver, 15).until(
+                        EC.frame_to_be_available_and_switch_to_it((By.CSS_SELECTOR, "iframe#iframeMail, iframe#idIframe"))
+                    )
+                except Exception as e:
+                    logging.error(f"  ‣ Error switching to email iframe: {e}")
+                    driver.switch_to.default_content()
+                    continue
+                body_html = driver.find_element(By.TAG_NAME, "body").get_attribute("innerHTML")
+                driver.switch_to.default_content()
+                m = re.search(r'href="([^"]*confirm[^"]*)"', body_html, re.IGNORECASE)
+                if m:
+                    confirm_url = m.group(1)
+                    logging.info(f"  ‣ Extracted confirmation link: {confirm_url}")
+                    return confirm_url
+                else:
+                    logging.warning("  ‣ No 'confirm' link found in email body.")
+        time.sleep(poll_interval)
+
+        # Click the refresh button if present
+        try:
+            driver.find_element(By.CSS_SELECTOR, ".refresh-btn, button.refresh-btn").click()
+        except Exception as e:
+            logging.error(f"  ‣ Error clicking refresh button: {e}")
+
+    logging.error("  ‣ Timed out waiting for confirmation email (Temp-Mail-Plus).")
+    return None
 
 
 def get_temp_email(driver, timeout=30):
