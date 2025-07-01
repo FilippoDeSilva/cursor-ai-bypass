@@ -1,3 +1,5 @@
+# email_automation.py
+
 import time
 import re
 import logging
@@ -17,15 +19,15 @@ def solve_recaptcha(driver):
     try:
         WebDriverWait(driver, 5).until(
             EC.frame_to_be_available_and_switch_to_it(
-                (By.XPATH, "//iframe[contains(@src, 'recaptcha') or contains(@src, 'google.com/recaptcha')]")
+                (By.XPATH, "//iframe[contains(@src, 'recaptcha')]")
             )
         )
         WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, "div.recaptcha-checkbox-border, div.recaptcha-checkbox-checkmark"))
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "div.recaptcha-checkbox-border"))
         ).click()
         logging.info("  ‣ Clicked reCAPTCHA checkbox on Temp-Mail-Plus.")
-    except Exception as e:
-        logging.error(f"  ‣ Error clicking reCAPTCHA checkbox: {e}")
+    except Exception:
+        pass
     finally:
         driver.switch_to.default_content()
 
@@ -44,7 +46,7 @@ def get_temp_email(driver, timeout=30):
 
     try:
         email_elem = WebDriverWait(driver, timeout).until(
-            EC.visibility_of_element_located((By.CSS_SELECTOR, "input#email, input#mail"))
+            EC.visibility_of_element_located((By.ID, "email"))
         )
         temp_email = email_elem.get_attribute("value")
         logging.info(f"  ‣ Temp-Mail-Plus acquired: {temp_email}")
@@ -68,28 +70,22 @@ def wait_for_confirmation_email(driver, timeout=180, poll_interval=5):
 
         # Look for list items in the inbox
         try:
-            items = driver.find_elements(By.CSS_SELECTOR, "ul.message-list li, div.mail-list div.mail-item")
-        except Exception as e:
-            logging.error(f"  ‣ Error finding message list items: {e}")
+            items = driver.find_elements(By.CSS_SELECTOR, "ul.message-list li")
+        except Exception:
             items = []
 
         for itm in items:
             try:
-                subj = itm.find_element(By.CSS_SELECTOR, ".subject, .mail-subject").text.lower()
+                subj = itm.find_element(By.CSS_SELECTOR, ".subject").text.lower()
             except Exception:
                 subj = ""
             if "cursor" in subj or "confirm" in subj:
                 logging.info(f"  ‣ Found Temp-Mail-Plus email: {subj}")
                 itm.click()
                 # Wait for the email iframe to load
-                try:
-                    WebDriverWait(driver, 15).until(
-                        EC.frame_to_be_available_and_switch_to_it((By.CSS_SELECTOR, "iframe#iframeMail, iframe#idIframe"))
-                    )
-                except Exception as e:
-                    logging.error(f"  ‣ Error switching to email iframe: {e}")
-                    driver.switch_to.default_content()
-                    continue
+                WebDriverWait(driver, 15).until(
+                    EC.frame_to_be_available_and_switch_to_it((By.CSS_SELECTOR, "iframe#iframeMail"))
+                )
                 body_html = driver.find_element(By.TAG_NAME, "body").get_attribute("innerHTML")
                 driver.switch_to.default_content()
                 m = re.search(r'href="([^"]*confirm[^"]*)"', body_html, re.IGNORECASE)
@@ -103,9 +99,9 @@ def wait_for_confirmation_email(driver, timeout=180, poll_interval=5):
 
         # Click the refresh button if present
         try:
-            driver.find_element(By.CSS_SELECTOR, ".refresh-btn, button.refresh-btn").click()
-        except Exception as e:
-            logging.error(f"  ‣ Error clicking refresh button: {e}")
+            driver.find_element(By.CSS_SELECTOR, ".refresh-btn").click()
+        except Exception:
+            pass
 
     logging.error("  ‣ Timed out waiting for confirmation email (Temp-Mail-Plus).")
     return None
@@ -115,7 +111,7 @@ def confirm_email_link(driver, confirm_url: str) -> bool:
     """
     Navigate to the confirmation URL and wait for “confirmed” or “verified” text.
     """
-    logging.info("  ↪ Navigating to Windsurf confirmation link…")
+    logging.info("  ↪ Navigating to Cursor confirmation link…")
     try:
         driver.get(confirm_url)
         WebDriverWait(driver, 30).until(
@@ -124,7 +120,7 @@ def confirm_email_link(driver, confirm_url: str) -> bool:
                 "//*[contains(text(),'confirmed') or contains(text(),'verified') or contains(text(),'activated')]"
             ))
         )
-        logging.info("  ‣ Windsurf email confirmed successfully!")
+        logging.info("  ‣ Cursor email confirmed successfully!")
         return True
     except Exception as e:
         logging.error(f"  ‣ Error confirming email in browser: {e}")
