@@ -3,6 +3,9 @@
 # ──── 1) BROWSER / WEBDRIVER SETUP ─────────────────────────────────────────────
 browser: chrome              # "chrome" or "firefox"
 driver_path: "C:/Users/Filip/OneDrive/Desktop/cursor-pro/chromedriver.exe" 
+# Examples you might fill in:
+# macOS:     "/usr/local/bin/chromedriver" (If not installed: "brew install chromedriver")
+# Linu:      "/usr/bin/chromedriver" (If not installed "sudo apt install chromium-chromedriver")
 # Path to chromedriver/geckodriver binary, or omitted if on PATH
 headless: false              # true => run browser in headless mode, false => show UI for debugging
 
