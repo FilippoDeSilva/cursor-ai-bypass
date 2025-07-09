@@ -46,9 +46,12 @@ def get_temp_email(driver, timeout=30):
 
     try:
         email_elem = WebDriverWait(driver, timeout).until(
-            EC.visibility_of_element_located((By.ID, "email"))
+            EC.visibility_of_element_located((By.ID, "pre_button"))
         )
-        temp_email = email_elem.get_attribute("value")
+        domain_elem = WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located((By.ID, "domain"))
+        )
+        temp_email = f"{email_elem.get_attribute('value')}{domain_elem.text}"
         logging.info(f"  ‣ Temp-Mail-Plus acquired: {temp_email}")
         return temp_email
     except Exception as e:
