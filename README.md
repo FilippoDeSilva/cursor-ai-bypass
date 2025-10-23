@@ -4,7 +4,7 @@ Check out my latest project, [**Wincur**](https://github.com/FilippoDeSilva/win-
 
 ## Cursor AI Telemetry Bypass Script 
 
-## 🚀 Introduction
+## 💡 Introduction
 
 Welcome to the **Cursor AI Telemetry Bypass Script**—a powerful Python toolkit designed to bypass cursor AI usage limits.
 
