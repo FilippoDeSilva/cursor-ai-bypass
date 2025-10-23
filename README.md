@@ -1,12 +1,13 @@
-# 🚀 Looking for an even simpler telemetry reset solution?
+# Cursor AI Telemetry Bypass Script
 
-Check out my latest project, [**Wincur**](https://github.com/FilippoDeSilva/win-cur) —  a fast, one-click tool that works for windsurf, cursor and warp all at once.
+> ⚠️ **This repository is no longer maintained and will be archived soon.**  
+> For a modern, one-click telemetry reset tool, see **Wincur** (link below).
 
-## Cursor AI Telemetry Bypass Script 
+---
 
-## 💡 Introduction
+## 🚀 Looking for an even simpler telemetry reset solution?
 
-Welcome to the **Cursor AI Telemetry Bypass Script**—a powerful Python toolkit designed to bypass cursor AI usage limits.
+Check out my latest project: **[Wincur](https://github.com/FilippoDeSilva/win-cur)** — a fast, one-click tool that resets telemetry for Windsurf, Cursor and Warp all at once.
 
 ---
 
