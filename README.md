@@ -1,7 +1,7 @@
 # Cursor AI Telemetry Bypass Script
 
 > ⚠️ **This repository is no longer maintained and will be archived soon.**  
-> For a modern, one-click telemetry reset tool, see **Wincur** (link below).
+> For a modern, one-click telemetry reset tool that works for windsurf, cursor and warp see **Wincur** (link below).
 
 ---
 
