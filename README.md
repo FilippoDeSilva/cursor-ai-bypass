@@ -1,7 +1,6 @@
 # 🚀 Looking for an even simpler telemetry reset solution?
 
-Check out my latest project, [**Wincur**](https://github.com/FilippoDeSilva/win-cur) —  
-a fast, one-click tool for professional telemetry cleanup.
+Check out my latest project, [**Wincur**](https://github.com/FilippoDeSilva/win-cur) —  a fast, one-click tool that works for windsurf, cursor and warp all at once.
 
 ## Cursor AI Telemetry Bypass Script 
 
